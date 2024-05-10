@@ -6,10 +6,28 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 body {
     margin: 0;
     background: #ffd700;
     color: #353d46;
+}
+
+/* section-triggers */
+.location-history {
+    display: none;
+}
+
+.driver-profile {
+    display: none;
+}
+
+.payment-method {
+    display: none;
+}
+
+.pop-up {
+    display: none;
 }
 
 nav#slide-menu {
@@ -69,7 +87,6 @@ nav#slide-menu>ul li:before {
     font-family: "ico";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
@@ -273,7 +290,7 @@ body.menu-active div#content .menu-trigger {
 .history-container {
     height: 224px;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .History {
@@ -305,6 +322,124 @@ body.menu-active div#content .menu-trigger {
 p {
     padding: 0;
     margin: 0;
+}
+/* Car selection */
+.driver-profile {
+    position: fixed;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.content-fig {
+    border-radius: 19px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-fig img {
+    border-radius: 19px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hr-1 {
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background: grey;
+}
+
+.tesla-models {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tesla-models .yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 156px;
+    height: 42px;
+    border-radius: 6px;
+    background: #FFD700;
+}
+
+.car-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: .1px solid #000000;
+    width: 100px;
+    height: 22px;
+    font-weight: 200;
+}
+
+.left-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tesla h3 {
+    font-weight: 600;
+}
+
+.arrive {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.arrive p {
+    font-weight: 600;
+    color: #19DA66;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.btn-1 {
+    background: #000000;
+    color: #FFD700;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 160px;
+    height: 48px;
+    border: none;
+}
+
+.btn-2 {
+    background: #FFD700;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 160px;
+    height: 48px;
+    border: none;
 }
 
 /* payment method */
@@ -347,6 +482,7 @@ p {
 }
 
 .payment-method {
+    /* display: none; */
     position: fixed;
     bottom: 0;
     left: 10;
@@ -356,7 +492,6 @@ p {
     height: 200px;
     border-top-left-radius: 38px;
     border-top-right-radius: 38px;
-    ock;
 }
 
 div .chose {
@@ -422,7 +557,6 @@ div .chose {
 }
 
 .pop-up {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;

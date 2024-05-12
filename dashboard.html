@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="geolocation" content="on">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="dashboard.css" />
 </head>
-<style>
-</style>
 
 <body>
     <section class="profile">
@@ -67,7 +65,7 @@
 
             <div class="history-container">
                 <div class="History">
-                    <div class="img-bg"><img src="radar.svg" alt="" /></div>
+                    <div class="img-bg"><img src="/assets/icons/radar.svg" alt="history icon"/></div>
                     <div class="area">
                         <h3><span id="ride-day">Tuesday</span> <span id="ride-start">7:34</span> - <span
                                 id="ride-end">7:21</span></h3>
@@ -76,7 +74,7 @@
                 </div>
 
                 <div class="History">
-                    <div class="img-bg"><img src="radar.svg" alt="" /></div>
+                    <div class="img-bg"><img src="/assets/icons/radar.svg" alt="" /></div>
                     <div class="area">
                         <h3><span id="ride-day">Friday</span> <span id="ride-start">3:02</span> - <span
                                 id="ride-end">3:10</span></h3>
@@ -85,7 +83,7 @@
                 </div>
 
                 <div class="History">
-                    <div class="img-bg"><img src="radar.svg" alt="" /></div>
+                    <div class="img-bg"><img src="/assets/icons/radar.svg" alt="" /></div>
                     <div class="area">
                         <h3><span id="ride-day">Saturday</span> <span id="ride-start">8:36</span> - <span
                                 id="ride-end">8:40</span></h3>
@@ -94,7 +92,7 @@
                 </div>
 
                 <div class="History">
-                    <div class="img-bg"><img src="radar.svg" alt="" /></div>
+                    <div class="img-bg"><img src="/assets/icons/radar.svg" alt="" /></div>
                     <div class="area">
                         <h3><span id="ride-day">Monday</span> <span id="ride-start">7:00</span> - <span
                                 id="ride-end">7:08</span></h3>
@@ -103,7 +101,48 @@
                 </div>
             </div>
     </div>
+    </section>
 
+    <!-- Car Selection -->
+    <section class="driver-profile">
+        <div class="tesla-models">
+            <figure class="content-fig">
+                <img src="/assets/images/tesla_model_s.jpg" alt="car-image">
+            </figure>
+
+            <div class="left-flex">
+                <div class="tesla">
+                    <h3>Tesla Models S</h3>
+                    <div class="car-model">BWR 790FE</div>
+                </div>
+                <div class="amount">
+                    <button class="yellow">
+                        <h2>₦<span class="price">200</span></h2>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                        <h2>4</h2><span class="material-symbols-outlined">
+                            airline_seat_recline_normal
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="arrive">
+            <p>Arriving in 3mins</p>
+            <div class="loader-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-1" id="ride">Cancel Ride</button>
+            <button class="btn-2" id="make">Make Payment</button>
+        </div>
+    </section>
+    <!-- Payment Section -->
+    <section class="payment-method">
         <div class="btbar">
             <div class="panel">
             </div>
@@ -113,78 +152,23 @@
             </div>
             <div class="method">Choose Payment Method</div>
             <div class="chose">
-                <p id="cash">Pay Cash</p>
-                <p id="trans">Bank Transfer</p>
+                <button id="cash">Pay Cash</button>
+                <button id="trans">Bank Transfer</button>
             </div>
         </div>
-
-        </section>
-        <!-- Car Selection -->
-        <section class="driver-profile">
-                <div class="tesla-models">
-                    <figure class="content-fig">
-                        <img src="/assets/images/tesla_model_s.jpg" alt="car-image">
-                    </figure>
-    
-                    <div class="left-flex">
-                        <div class="tesla">
-                            <h3>Tesla Models S</h3>
-                            <div class="car-model">BWR 790FE</div>
-                        </div>
-                        <div class="amount">
-                            <button class="yellow">
-                                <h2>₦<span class="price">200</span></h2>
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                                <h2>4</h2><span class="material-symbols-outlined">
-                                    airline_seat_recline_normal
-                                </span>
-                            </button>
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="arrive">
-                    <p>Arriving in 3mins</p>
-                    <div class="loader-container">
-                        <div class="loader-bar"></div>
-                    </div>
-                </div>
-    
-                <div class="buttons">
-                    <button class="btn-1" id="ride">Cancel Ride</button>
-                    <button class="btn-2" id="make">Make Payment</button>
-                </div>
-        </section>
-        <!-- Payment Section -->
-        <section class="payment-method">
-            <div class="btbar">
-                <div class="panel">
-                </div>
-                <div class="eta">Arriving in 6 mins</div>
-                <div class="loader-container">
-                    <div class="loader-bar"></div>
-                </div>
-                <div class="method">Choose Payment Method</div>
-                <div class="chose">
-                    <button id="cash">Pay Cash</button>
-                    <button id="trans">Bank Transfer</button>
-                </div>
+    </section>
+    <!-- Account details Pop Up -->
+    <section class="pop-up" id="pop-up">
+        <div class="bank-card">
+            <div class="bank-tab-content active-tab-content" class=".bank">
+                <span class="closeButton" id="closePopup">&times;</span>
+                <h4 class="bankh4">Bank Account: <span class="transfer-info">1234567890</span></h4>
+                <h4 class="bankh4">Bank: <span class="transfer-info">Opay</span></h4>
+                <h4 class="bankh4">Account Name: <span class="transfer-info">Ridal Account</span></h4>
+                <button class="copy-button" id="copyButton">Copy Bank Details <i class="fa-solid fa-link"></i></button>
             </div>
-        </section>
-        <!-- Account details Pop Up -->
-        <section class="pop-up" id="pop-up">
-            <div class="bank-card">
-                <div class="bank-tab-content active-tab-content" class=".bank">
-                    <span class="closeButton" id="closePopup">&times;</span>
-                    <h4 class="bankh4">Bank Account: <span class="transfer-info">1234567890</span></h4>
-                    <h4 class="bankh4">Bank: <span class="transfer-info">Opay</span></h4>
-                    <h4 class="bankh4">Account Name: <span class="transfer-info">Ridal Account</span></h4>
-                    <button class="copy-button" id="copyButton">Copy Bank Details <i class="fa-solid fa-link"></i></button>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
     </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>

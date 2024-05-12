@@ -15,10 +15,11 @@ body {
 
 /* section-triggers */
 .location-history {
-    display: none;
+    /* display: none; */
 }
 
-.driver-profile {
+* .driver-profile {
+    display: flex;
     display: none;
 }
 
@@ -267,6 +268,11 @@ body.menu-active div#content .menu-trigger {
 
 /* history-section */
 
+.section-heading {
+    margin: 10px;
+    margin-left: 20px;
+}
+
 .section-heading h2>p {
     color: #ffd700;
 }
@@ -275,11 +281,6 @@ body.menu-active div#content .menu-trigger {
     font-weight: 500;
     color: black;
     font-size: large;
-}
-
-.section-heading {
-    margin: 10px;
-    margin-left: 20px;
 }
 
 .history-tab {
@@ -336,7 +337,6 @@ p {
     border-top-left-radius: 38px;
     border-top-right-radius: 38px;
     padding: 0.7rem;
-    display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
@@ -482,7 +482,6 @@ p {
 }
 
 .payment-method {
-    /* display: none; */
     position: fixed;
     bottom: 0;
     left: 10;

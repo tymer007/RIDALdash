@@ -1,211 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up Page 1</title>
-  <!-- <link rel="stylesheet" href="/driverProfileSetup1.css"> -->
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page 1</title>
+    <link rel="stylesheet" href="/driverProfileSetup1.css" />
+  </head>
+  <body class="center">
+    <div class="container">
+      <div class="box">
+        <img src="/assets/logos/ridal-driver.png" alt="logo" class="logo" />
+      </div>
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 11px;
-}
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-body {
-    font-size: 1.3rem;
-    background-image: url(WhatsApp\ Image\ 2024-03-18\ at\ 10.37.48\ PM.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    padding: 20px;
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
-.rectangle .white{
-    background-color: white;
-}
-.container{
-    width: 333px;
-    height: 659px;
-}
-
-.wrapper{
-    background-color: #FFD700;
-    width: 100%;
-    border-radius: 64px;
-    opacity: 0px;
-    display: grid;
-    place-items: center;
-}
-
-form{
-    margin-bottom: 50px;
-}
-form input{
-    outline: none;
-}
-.input input{
-    width: 272px;
-    height: 32px;
-    border-radius: 9px;
-    border: 1px solid #0000004b;
-    background-color: #0000002c;
-}
-.input{
-    margin: 14px;
-    text-align: start;
-    
-}
-.button{
-    text-decoration: none;
-    text-align: center;
-    background-color: white;
-    color: #FFD700;
-    width: 169px;
-    height: 38px;
-    top: 589px;
-    left: 82px;
-    padding: 12px 0px 7px 0px;
-    gap: 0px;
-    border-radius: 9px;
-    border: none;
-    margin-left: 1.5rem;
-    margin-bottom: 10px;
-}
-.rectangle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    
-} 
-.rectangle div{
-    background-color: black;
-    width: 40px;
-    height: 5px;
-    top: 33px;
-    left: 89px;
-    margin: 0.5rem;
-    gap: 13px;
-    opacity: 0px;
-    border-radius: 0.2rem;
-    margin-top: 2rem;
-}  
-
-input{
-    text-indent: 1rem;
-}
-form label{
-    display: block;
-    text-indent: 0.1rem;
-}
-.input{
-    margin: 19px;
-}
-/* iPhone SE (portrait) */
-@media only screen 
-  and (max-device-width: 320px) 
-  and (orientation: portrait) {
-
-  .container {
-    width: 100%; /* Adjust container width for smaller screens */
-    height: auto; /* Adjust container height for smaller screens */
-  }
-
-  /* Update any other styles as needed for iPhone SE portrait mode */
-}
-
-/* iPhone SE (landscape) */
-@media only screen 
-  and (max-device-width: 568px) 
-  and (orientation: landscape) {
-
-  .container {
-    width: 90%; /* Adjust container width for smaller screens */
-    height: auto; /* Adjust container height for smaller screens */
-  }
-
-  /* Update any other styles as needed for iPhone SE landscape mode */
-}
-
-</style>
-<body class="center">
-   <div class="container">
-        <div class="box">
-            <img src="Frame 220.png" alt="">
+      <div class="wrapper">
+        <div class="rectangle">
+          <div class="white"></div>
+          <div></div>
+          <div></div>
         </div>
+        <form action="/action_page.php" id="myForm" method="post">
+          <section class="input">
+            <label for="fname">First Name</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
 
-        <div class="wrapper">
-            <div class="rectangle">
-                <div class="white"></div>
-                <div></div>
-                <div></div>
-            </div>
-            <form action="/action_page.php" id="myForm" method="post">
-            
-                <section class="input">
-                    <label for="fname">First Name</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
+          <section class="input">
+            <label for="lname">Last Name</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
 
-                <section class="input">
-                    <label for="lname">Last Name</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
+          <section class="input">
+            <label for="gender">Gender</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
 
-                <section class="input">
-                    <label for="gender">Gender</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
+          <section class="input">
+            <label for="vmm">Vehicle Manufacturer and Model</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
 
-                <section class="input">
-                    <label for="vmm">Vehicle Manufacturer and Model</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
+          <section class="input">
+            <label for="year">Vehicle Year</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
 
-                <section class="input">
-                    <label for="year">Vehicle Year</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
+          <section class="input">
+            <label for="vpn">Vehicle Plate No.</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
 
-                <section class="input">
-                    <label for="vpn">Vehicle Plate No.</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
-
-                <section class="input">
-                    <label for="vcolor">Vehicle Color</label>
-                    <input type="text" class="name-input input-style" required>
-                </section>
-                <button type="button" class="button" onclick="submitFormAndNavigate()">Next</button>
-            </form>
-        </div>    
+          <section class="input">
+            <label for="vcolor">Vehicle Color</label>
+            <input type="text" class="name-input input-style" required />
+          </section>
+          <button
+            type="button"
+            class="button"
+            onclick="submitFormAndNavigate()"
+          >
+            Next
+          </button>
+        </form>
+      </div>
     </div>
     <script>
-        function submitFormAndNavigate() {
-            // Submit the form
-            document.getElementById('myForm').submit();
-            // Navigate to the next page
-            window.location.href = 'driverProfileSetup2.html';
-        }
-    </script>       
-</body>
+      function submitFormAndNavigate() {
+        // Submit the form
+        document.getElementById("myForm").submit();
+        // Navigate to the next page
+        window.location.href = "driverProfileSetup2.html";
+      }
+    </script>
+  </body>
 </html>

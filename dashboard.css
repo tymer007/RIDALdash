@@ -85,7 +85,6 @@ nav#slide-menu>ul li:hover {
 }
 
 nav#slide-menu>ul li:before {
-    font-family: "ico";
     font-style: normal;
     font-weight: normal;
     display: inline-block;
@@ -126,7 +125,6 @@ div#content {
     background: #fcfeff;
     border-radius: 0;
     box-sizing: border-box;
-    box-shadow: -3px 0 6px #4a5562;
     transition: all 300ms;
 }
 
@@ -160,7 +158,6 @@ div#content div.menu-trigger:before {
     width: 36px;
     height: 36px;
     color: black;
-    font-family: "poppins";
     font-style: normal;
     font-size: 1.2em;
     font-weight: normal;
